@@ -1,5 +1,6 @@
 body{
     background-image: url("walt-disney-logo.webp");
+    background-position: center;
     background-size: cover;
 }
 
@@ -19,7 +20,7 @@ body{
 h1{
     font-family: Papyrus, times new roman, serif;
     text-align: center;    
-    font-size: 60px;    
+    font-size: 80px; 
 }
 
 h2{
