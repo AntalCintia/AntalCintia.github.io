@@ -1,0 +1,61 @@
+body{
+    background-image: url("walt-disney-logo.webp");
+    background-size: cover;
+}
+
+.tartalom {
+    background-color: darkcyan;
+    color:rgb(36, 29, 81);
+    padding: 30px;
+    border: 10px solid rgb(159,207,230);
+    border-radius: 30px;
+    display: flow-root;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1{
+    font-family: Papyrus, times new roman, serif;
+    text-align: center;    
+    font-size: 60px;    
+}
+
+h2{
+    text-align: left;
+    font-size: 30px;
+    font-family: times new roman, serif;
+    font-style:oblique;
+    margin-left: 40px;
+}
+
+#kep {
+    max-width: 450px;
+    max-height: 600px;
+    float: right;
+    margin-right: 40px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 700px;
+}
+
+button {
+    background-color: rgb(36, 29, 81);
+    color: rgb(159,207,230);
+    font-size: 20px;
+    padding: 30px 20px;
+    /*border: none;*/
+    border-radius: 60px;
+    cursor: pointer;
+    /*border: 4px dotted #008CBA;*/
+    border: 7px solid rgb(159,207,230);
+    size: 200%;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+div {
+    font-size: 20px;
+    margin-left: 40px;
+}
