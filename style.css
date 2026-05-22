@@ -8,27 +8,27 @@ body{
     background-color: darkcyan;
     color:rgb(36, 29, 81);
     padding: 30px;
-    border: 10px solid rgb(159,207,230);
-    border-radius: 30px;
+    border: 1.2vw solid rgb(159,207,230);
+    border-radius: 3.6vw;
     display: flow-root;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 h1{
     font-family: Papyrus, times new roman, serif;
     text-align: center;    
-    font-size: 80px; 
+    font-size: 8.8vw;
 }
 
 h2{
     text-align: left;
-    font-size: 30px;
+    font-size: 3.3vw;
     font-family: times new roman, serif;
     font-style:oblique;
-    margin-left: 40px;
+    margin-left: 2%;
 }
 
 #kep {
@@ -38,15 +38,15 @@ h2{
     margin-right: 40px;
     margin-left: 30px;
     margin-bottom: 30px;
-    width: 700px;
+    width:700px;
 }
 
 button {
     background-color: rgb(36, 29, 81);
     color: rgb(159,207,230);
-    font-size: 20px;
+    font-size: 2.5vw;
     /*padding: 30px 20px;*/
-    padding: 3.5% 2%;
+    padding: 30px 20px;
     /*border: none;*/
     border-radius: 60px;
     cursor: pointer;
@@ -54,10 +54,10 @@ button {
     border: 7px solid rgb(159,207,230);
     size: 200%;
     margin-left: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 div {
-    font-size: 20px;
-    margin-left: 40px;
+    font-size: 2.5vw;
+    margin-left: 2%;
 }
