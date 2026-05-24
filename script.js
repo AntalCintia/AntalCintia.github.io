@@ -19,13 +19,17 @@ async function uj_karakter(){
     let data = await getch(`https://api.disneyapi.dev/character/${randomId}`);
     console.log(data);
 
-    if (data.data === null) {
-        console.log("Nincs ilyen karakter");
+    if (!data.data) {
+        //console.log("Nincs ilyen karakter");
         uj_karakter();
         return;
     }
 
-    karakter.innerHTML = data.data.name;
+    if (!data.data.name) {
+        karakter.innerHTML = "Beazonosítatlan karakter";
+    } else {
+        karakter.innerHTML = data.data.name;
+    }
 
     if (data.data.imageUrl) {
         kep.src = data.data.imageUrl;
@@ -57,10 +61,22 @@ async function uj_karakter(){
         videojatekok.innerHTML = "────୨ৎ────";
     }
 
+    if (!data.data.alignment) {
+        oldal.innerHTML = "────୨ৎ────";
+    } else {
+        oldal.innerHTML = data.data.alignment;
+    }
+
     if (data.data.parkAttractions.length > 0) {
         parkattrakciok.innerHTML = data.data.parkAttractions.join(", ");
     } else {
         parkattrakciok.innerHTML = "────୨ৎ────";
+    }
+
+    if (data.data.allies.length > 0) {
+        szovetsegesek.innerHTML = data.data.allies.join(", ");
+    } else {
+        szovetsegesek.innerHTML = "────୨ৎ────";
     }
 
     if (data.data.enemies.length > 0) {
@@ -77,6 +93,7 @@ const filmek = document.getElementById("filmek");
 const rovidfilmek = document.getElementById("rovidfilmek");
 const tevemusorok = document.getElementById("tevemusorok");
 const videojatekok = document.getElementById("videojatekok");
+const oldal = document.getElementById("oldal");
 const parkattrakciok = document.getElementById("parkattrakciok");
 const ellensegek = document.getElementById("ellensegek");
 
