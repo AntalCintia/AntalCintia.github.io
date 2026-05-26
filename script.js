@@ -1,5 +1,5 @@
 function veletlen_szam(){
-    return Math.floor(Math.random() * 7438) + 1;//10000) + 1;
+    return Math.floor(Math.random() * 10000) + 1;
 }
 
 
@@ -13,14 +13,10 @@ async function uj_karakter(){
     
     let randomId = veletlen_szam();
 
-    //console.log(randomId);// dzsitipiti
-
-    
     let data = await getch(`https://api.disneyapi.dev/character/${randomId}`);
     console.log(data);
 
     if (!data.data) {
-        //console.log("Nincs ilyen karakter");
         uj_karakter();
         return;
     }
